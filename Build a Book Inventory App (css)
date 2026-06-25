@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #e8f5e9, #ffffff);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fff3e0, #ffffff);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+span[class="status"], span[class^="rate"] {
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #fb8c00;
+  background-image: linear-gradient(#ffe0b2, #ffb74d);
+  border-radius: 15px;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid #43a047;
+  background-image: linear-gradient(#c8e6c9, #81c784);
+  border-radius: 15px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #1e88e5;
+  background-image: linear-gradient(#bbdefb, #64b5f6);
+  border-radius: 15px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #7f8c8d;
+  border-radius: 50%;
+  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #ecf0f1;
+}
+
+span[class~="one"] span:nth-child(1) {
+  background-image: linear-gradient(#f1c40f, #f39c12);
+}
+
+span[class~="two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(#f1c40f, #f39c12);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(#f1c40f, #f39c12);
+}
