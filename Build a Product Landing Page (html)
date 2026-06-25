@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="logo-container">
+        <span class="brand-name">Aura Beans</span>
+      </div>
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#process">Our Process</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h2>Sustainably Sourced, Exceptionally Roasted</h2>
+        <p>Craft coffee delivered fresh to your door every single week.</p>
+        
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Enter your email address" 
+            required 
+          />
+          <input type="submit" id="submit" value="Get Started" />
+        </form>
+      </section>
+
+      <section id="features" class="content-section">
+        <div class="feature-item">
+          <div class="icon">☕</div>
+          <div>
+            <h3>Premium Blend</h3>
+            <p>We source only the top 1% of organic Arabica beans worldwide.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="icon">🌍</div>
+          <div>
+            <h3>Ethical Sourcing</h3>
+            <p>100% Fair Trade certified. We pay farmers directly above market rates.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="content-section">
+        <h2>Watch How It's Made</h2>
+        <div class="video-container">
+          <iframe 
+            id="video" 
+            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+            title="Product Video" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section id="pricing" class="content-section">
+        <h2>Choose Your Roast</h2>
+        <div class="pricing-grid">
+          <div class="product-card">
+            <h4>Light Roast</h4>
+            <p class="price">$15 / lb</p>
+            <p>Bright, citrusy, and deeply complex flavor notes.</p>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product-card highlighted">
+            <h4>Medium Roast</h4>
+            <p class="price">$18 / lb</p>
+            <p>Smooth, balanced, with sweet hints of caramel.</p>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product-card">
+            <h4>Dark Roast</h4>
+            <p class="price">$16 / lb</p>
+            <p>Bold, full-bodied with a rich smoky finish.</p>
+            <button class="btn">Select</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
