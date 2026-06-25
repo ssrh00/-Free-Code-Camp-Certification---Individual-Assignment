@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Python Essentials</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a>
+      <a class="nav-link" href="#Defining_Functions">Defining Functions</a>
+      <a class="nav-link" href="#Lists_and_Dictionaries">Lists and Dictionaries</a>
+    </nav>
+
+    <main id="main-doc">
+      
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Python is a high-level, interpreted programming language known for its readability and simplicity. It supports multiple programming paradigms, including object-oriented, imperative, and functional programming.</p>
+        <p>To run your very first Python program, you simply need a text editor and the Python interpreter installed on your system.</p>
+        <code>print("Hello, World!")</code>
+      </section>
+
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header>Variables and Data Types</header>
+        <p>In Python, variables are created the moment you assign a value to them. You do not need to explicitly declare the data type.</p>
+        <p>Standard data types include integers, floats, strings, and booleans. Here is how you can use them:</p>
+        <code>x = 10<br>name = "Alice"<br>is_active = True</code>
+      </section>
+
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>Python uses standard conditional statements like <code>if</code>, <code>elif</code>, and <code>else</code> to control the logic flow of a application.</p>
+        <p>Instead of curly braces, Python relies heavily on indentation to define code blocks. This makes the code visually clean and uniform.</p>
+        <code>if x > 5:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Big number")</code>
+      </section>
+
+      <section class="main-section" id="Defining_Functions">
+        <header>Defining Functions</header>
+        <p>Functions in Python are defined using the <code>def</code> keyword, followed by the function name and parentheses.</p>
+        <p>Functions can accept arguments and return values back to the caller seamlessly.</p>
+        <code>def greet(user):<br>&nbsp;&nbsp;&nbsp;&nbsp;return f"Hello, {user}"</code>
+      </section>
+
+      <section class="main-section" id="Lists_and_Dictionaries">
+        <header>Lists and Dictionaries</header>
+        <p>Python provides powerful built-in collections to manage structured data efficiently.</p>
+        <p>The two most commonly used collections are:</p>
+        <ul>
+          <li><strong>Lists:</strong> Ordered and mutable sequences of elements.</li>
+          <li><strong>Dictionaries:</strong> Unordered collections of key-value pairs.</li>
+          <li><strong>Tuples:</strong> Ordered, immutable sequences.</li>
+          <li><strong>Sets:</strong> Unordered collections of unique elements.</li>
+          <li><strong>Strings:</strong> Sequences of characters.</li>
+        </ul>
+        <p>Using them allows you to manipulate datasets easily without external packages.</p>
+      </section>
+
+    </main>
+  </body>
+</html>
